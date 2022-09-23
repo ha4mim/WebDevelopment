@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .tbl1 {
+            width: 50%;
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+        .tbl1 tr,th,td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;/*cell padding*/
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Table in HTML:</h1>
+    <p>Table starts with "table" tag. "tr"-indicates the table row. "th" indicates the table heading. "td" indicates table-data.</p>
+    <p>A table has 3 part. "thead", "tbody" and "tfooter"</p>
+    <table title="Simple Table" border="1px solid black">
+        <caption>Simple Table</caption>
+        <tr>
+            <th>Name</th>
+            <th>ID</th>
+        </tr>
+        <tr>
+            <td>Sheikh Hamim Mahmud</td>
+            <td>011191039</td>
+        </tr>
+    </table>
+    <br>
+    <table title="Simple Table" border="1px solid black">
+        <caption>Simple Table</caption>
+        <tr>
+            <th>Name</th>
+            <td>Sheikh Hamim Mahmud</td>
+        </tr>
+        <tr>
+            <th>ID</th>
+            <td>011191039</td>
+        </tr>
+    </table>
+    <br>
+    <table class="tbl1">
+        <caption>Table with all table tags</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>GPA</th>
+            </tr>
+        </thead>
+        <tbody>
+                <td>101</td>
+                <td>Anis</td>
+                <td>3.50</td>
+            </tr>
+                <td>101</td>
+                <td>karim</td>
+                <td>3.50</td>
+            </tr>
+                <td>101</td>
+                <td>Rahim</td>
+                <td>3.50</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Cellspan & Colspan</h2>
+    <table border="1">
+        <caption>Rowspan & Colspan</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Telephone</th>
+                <th colspan="3">Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sheikh Hamim Mahmud</td>
+                <td>01303506170</td>
+                <td>01747099226</td>
+                <td>Nurjahan Road,<br>Mohammadpur,<br>Dhaka.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Accessible Table:</h2>
+    <table border="1px">
+        <caption>Accessible Table</caption>
+        <colgroup>
+            <col span="1" style="background-color: red;"/>
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">ID</th>
+                <th scope="col">Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Hamim</th>
+                <td>011191039</td>
+                <td>Dhaka</td>
+            </tr>
+            <tr>
+                <th scope="row">Prithil</th>
+                <td>011191009</td>
+                <td>Kushtia</td>
+            </tr>
+            <tr>
+                <th scope="row">Sajal</th>
+                <td>011191012</td>
+                <td>Cumilla</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Practice:</h2>
+    <table border="1"  cellpadding="5px">
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m</td>
+                <td rowspan="2">5:00 p.m</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity: DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Tuesday</td>
+                <td>8:00 a.m</td>
+                <td>11:00 a.m</td>
+                <td rowspan="1.5">XPath</td>
+            </tr>
+            <tr>
+                <td rowspan="2">11:00 a.m</td>
+                <td rowspan="2">2:00 p.m</td>
+            </tr>
+            <tr>
+                <td rowspan="2">XSL transformation</td>
+            </tr>
+            <tr>
+                <td>2:00 p.m</td>
+                <td>5:00 p.m</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 a.m</td>
+                <td>12:00 p.m</td>
+                <td>XLS Formatting Objects</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <br><br>
+</body>
+</html>
