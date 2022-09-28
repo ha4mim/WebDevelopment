@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <h1>HTML Form:</h1>
+    <p>We can take information from user through form</p>
+    <p>"input" tag used for creating field, "type" attribute defines field type.</p>
+    <form action="" method="POST">
+        <fieldset>
+            <legend>HTML Registration Form</legend>
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="your name" autofocus required>
+            </p>
+    
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="your email" required>
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="your password" required>
+            </p>
+            <p>
+                <label for="pic">Photo</label>
+                <input type="file" name="pic" id="pic">
+            </p>
+            <p>
+                <label for="bday">Date of Birth:</label>
+                <input type="date" id="bday" name="bday" placeholder="Your Date of Birth" required>
+            </p>
+            <p>
+                <label for="gender">Your Gender:</label>
+                <input type="radio" id="gender" name="gender" required  value="">Male
+                <input type="radio" id="gender" name="gender" required value="">Female
+                <input type="radio" id="gender" name="gender" required value="">Others
+            </p>
+            <p>
+                <label for="religion">Religion:</label>
+                <input type="checkbox" name="islam" id="religion">Islam
+                <input type="checkbox" name="hindu" id="religion">Hindu
+                <input type="checkbox" name="budhist" id="religion">Budhist
+                <input type="checkbox" name="cristan" id="religion">Cristan
+            </p>
+            <p>
+                <select name="dept" id="dept">
+                    <option value="0">---Select Your Dept---</option>
+                    <option value="1">BBA</option>
+                    <option value="2">CSE</option>
+                    <option value="3">EEE</option>
+                    <option value="4">Civil</option>
+                </select>
+            </p>
+            <p>
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" cols="20" rows="5"></textarea>
+            </p>
+            <p>
+                <label for="color">Favorite Color:</label>
+                <input type="color" name="color" id="color">
+            </p>
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </p>
+            
+        </fieldset>
+    </form><br><br>
+</body>
+</html>
