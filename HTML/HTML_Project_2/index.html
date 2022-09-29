@@ -19,26 +19,57 @@
         .post{
             text-align: center;
         }
-        .logo{
+        #logo .logo{
             height: 300px;
             width: 300px;
             margin-left: auto;
             margin-right: auto;
             display: block;
         }
-        .edu{
+        .edu,.hobby,.skill,.contact,.follow{
             text-decoration: underline;
+            text-transform: capitalize;
+            font-style: italic;
+        }
+        footer{
+            align-items: center;
+        }
+        footer ul{
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+        footer ul li{
+            align-items: center;
+            list-style: none;
+            display: inline-block;
+        }
+        footer ul li a{
+            align-items: center;
+            text-decoration: none;
+            display: flex;
+            padding: 50px 50px;
+        }
+        footer ul li a img{
+            border-radius: 50%;
+            align-items: center;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to my Protfolio</h1>
+    <!-- Heading Section -->
+    <header><h1>Welcome to my Protfolio</h1></header>
     <hr>
-    <h2 class="name">Sheikh Hamim Mahmud</h2>
-    <img class="logo" src="images/logo.png" alt="hamim's profile photo">
-    <h3 class="post">Web Developer</h3>
+    <!-- Logo Section -->
+    <section id="logo">
+        <h2 class="name">Sheikh Hamim Mahmud</h2>
+        <img class="logo" src="images/logo.png" alt="hamim's profile photo">
+        <h3 class="post">Web Developer</h3>
+    </section>
     <hr>
-    <h2 class="edu">Education:</h2>
+    <!-- Education Section -->
+    <section id="edu">
+        <h2 class="edu">Education:</h2>
     <table border="1px solid black">
         <thead>
             <tr>
@@ -81,8 +112,11 @@
             </tr>
         </tbody>
     </table>
+    </section>
     <hr>
-    <h2 class="hobby">Hobby:</h2>
+    <!-- Hobby Section -->
+    <section id="hobby">
+        <h2 class="hobby">Hobby:</h2>
     <ul>
         <li>Reading Book</li>
         <li>Fishing</li>
@@ -92,5 +126,111 @@
         <li>Video Games</li>
         <li>Watching Movies</li>
     </ul>
+    </section>
+    <hr>
+    <!-- Skill Section -->
+    <section id="skill">
+        <h2>Skill</h2>
+    <table>
+        <tr>
+            <th>HTML</th>
+            <td>&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</td>
+            <th>MS Word</th>
+            <td><progress min="0" max="100" value="90" title="90%"></progress></td>
+        </tr>
+        <tr>
+            <th>CSS</th>
+            <td>&#x2B50;&#x2B50;&#x2B50;</td>
+            <th>MS PowerPoint</th>
+            <td><progress min="0" max="100" value="80" title="80%"></progress></td>
+        </tr>
+        <tr>
+            <th>JavaScript</th>
+            <td>&#x2B50;&#x2B50;</td>
+            <th>MS Excel</th>
+            <td><progress min="0" max="100" value="50" title="50%"></progress></td>
+        </tr>
+    </table>
+    </section>
+    <hr>
+    <!-- Feedback Section -->
+    <section id="feedback">
+        <fieldset>
+            <legend>Send Your Message</legend>
+            <form action="" method="post">
+               <div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" name="fullName" id="fullName" placeholder="Enter your Full Name" required>
+               </div>
+               <br>
+               <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+               </div>
+               <br>
+               <div>
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" cols="5" rows="5" placeholder="Your Address"></textarea>
+               </div>
+               <br>
+               <div>
+                <label for="mobile">Mobile No:</label>
+                <input type="text" name="mobile" id="mobile" placeholder="Your Mobile Number">
+               </div>
+               <br>
+               <div>
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" id="gender">Male
+                <input type="radio" name="gender" id="gender">Female
+                <input type="radio" name="gender" id="gender">Others
+               </div>
+               <br>
+               <div>
+                <label for="comment">Your Comment:</label>
+                <textarea name="comment" id="comment" cols="15" rows="5" placeholder="Your Comment"></textarea>
+               </div>
+               <br>
+               <div>
+                <label for="experience">How Was Your Experience:</label>
+                <input type="checkbox" name="experience1" value="Good" id="experience">Good
+                <input type="checkbox" name="experience2" value="OK" id="experience">OK
+                <input type="checkbox" name="experience3" value="Bad" id="experience">Bad
+               </div>
+               <div>
+                <input type="submit" value="Send" style="background-color: blue;">
+               </div>
+            </form>
+        </fieldset>
+    </section>
+    <hr>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="contact" align="center">Contact Me:</h2>
+        <table align="center">
+            <tr>
+                <th colspan="3" align="center"><h3>Sheikh Hamim Mahmud</h3></th>
+            </tr>
+            <tr>
+                <th><strong>Mobile No:</strong></th>
+                <td>+8801747099226</td>
+                <td>+8801303506170</td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td colspan="3"><address>N-17,Nurjahan Road, Mohammadpur, Dhaka-1207.</address></td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+    <footer>
+        <h2 class="follow">Follow Me:</h2>
+        <ul>
+            <li><a href="https://www.facebook.com/hamim.mahmud.12/" target="_blank"><img src="images/facebook.svg" alt="faccebook" height="50" width="50"></a></li>
+            <li><a href="https://www.linkedin.com/in/sheikh-hamim-mahmud-2688b310b/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" height="50" width="50"></a></li>
+            <li><a href="https://github.com/ha4mim" target="_blank"><img src="images/github.svg" alt="github" height="50" width="50"></a></li>
+        </ul>
+        <hr>
+        <h6 align="center">Made By: Sheikh Hamim Mahmud &copy;</h6>
+    </footer>
 </body>
 </html>
