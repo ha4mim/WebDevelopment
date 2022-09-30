@@ -1,0 +1,48 @@
+h3{
+    text-align: center;
+    text-decoration: dotted;
+    font-style: oblique;
+    font-size: 36px;
+    color: blue;
+}
+#para1{
+    background-color: aqua;
+    color: black;
+}
+.para1{
+    background-color: blueviolet;
+    color: black;
+
+}
+.para2{
+    background-color: brown;
+    color: black;
+}
+/* Element Selector */
+p{
+    color: red;
+    background-color: white;
+}
+/* Clss Selector */
+.hamim1{
+    color: red;
+    background-color: green;
+}
+/* Multi Class Selector */
+.hamim2{
+    text-decoration:wavy;
+    text-align: center;
+    font-weight: 100;
+    font-size: medium;
+    font-style: italic;
+}
+/* ID Selector */
+#hamim3{
+    color: tomato;
+    background-color: aqua;
+}
+/* Group Selector */
+#group, .group1, .group2{
+    background-color: yellowgreen;
+    color: brown;
+}
