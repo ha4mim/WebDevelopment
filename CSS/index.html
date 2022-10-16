@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Learning</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"
     <style type="text/css">
         h2{
             text-align: justify;
@@ -39,11 +42,36 @@
     <p class="group1">Group Selector 1</p>
     <p class="group2">Group Selector 2</p>
     <hr>
-    <h1>Decendent Selector</h1>
-    <div>
+    <h1>Combinators</h1>
+    <h2>Decendent Selector</h2>
+    <div id="div1">
         <p>Decendent 1</p>
         <p>Decendent 1</p>
         <p>Decendent 1</p>
+    </div>
+    <div id="div2">
+        <p>Child 1</p>
+        <p>Child 2</p>
+        <p>Child 3</p>
+        <section><p>Child 4</p></section>
+    </div>
+    <p>Addjusent Sibling selector:"div"+"Selector"</p>
+    <p>Generan Sibling Selector:"div"~"Selector"</p>
+    <p>Universal Selector:"*"</p>
+    <div id="div3">
+        <h1>CSS Fonts:</h1>
+        <p>This is a paragraph</p>
+    </div>
+    <div id="align">
+        <h1>Text Align:</h1>
+        <p class="left">Text Align Left(Default)</p>
+        <p class="right">Text Align right</p>
+        <p class="center">Text Align center</p>
+        <p class="justify">Text Align justify</p>
+    </div>
+    <div class="text_style">
+        <h1>Sheikh Hamim Mahmud</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique maxime eveniet tenetur natus dignissimos laboriosam quisquam culpa suscipit dicta totam.</p>
     </div>
 </body>
 </html>

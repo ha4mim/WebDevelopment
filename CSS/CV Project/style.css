@@ -1,0 +1,157 @@
+/* Universel Selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body */
+body{
+    background-color: darkslategray;
+    font-family: 'Raleway', sans-serif;
+}
+/* container */
+.container{
+    background-color: aquamarine;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* header */
+header{
+    
+}
+/* profile image */
+.profile-image{
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 50%;
+    float: left;
+}
+.header-bio{
+    float: left;
+    padding: 30px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: ;
+    color: crimson;
+    font-family: 'Roboto', sans-serif;
+}
+.clear-div{
+    clear: both;
+}
+hr{
+  border: 3px solid black;
+  width: 100%;
+  margin: 20px auto;
+  border-bottom: none;
+}
+.header-contact{
+    float: right;
+    margin-right: 20px;
+}
+.header-contact a{
+    text-decoration: none;
+    padding: 5px;
+    color:gray;
+}
+.header-contact a:hover{
+    text-decoration: underline;
+    color: chocolate;
+}
+/* -----------
+Personal Section
+-------------- */
+#personal-content{
+
+}
+.content{
+    padding: 10px;
+}
+.content-left{
+    float: left;
+    width: 30%;
+}
+.content-right{
+    float: left;
+    width: 70%;
+    
+}
+.hr-universal{
+    border: 1px solid black;
+    border-bottom: none;
+    margin: 20px auto;
+}
+/* Edication */
+#edu{
+
+}
+.edu-left{
+    float: left;
+    width: 30%;
+}
+.edu-right{
+    width: 70%;
+    float: right;
+}
+.edu-university{
+    float: left;
+    width: 30%;
+    margin: 1%;
+}
+.edu-college{
+    float: left;
+    width: 30%;
+    margin: 1%;
+}
+.edu-school{
+    float: left;
+    width: 30%;
+    margin: 1%;
+}
+.edu{
+    text-decoration: none;
+    color: brown;
+    padding: 20px 30px;
+    text-align: left;
+}
+.edu:hover{
+    color:blueviolet;
+    text-decoration: underline;
+}
+/* ---------------
+    SKILL
+------------------ */
+#skill{
+
+}
+.skill-left{
+    float: left;
+    width: 30%;
+}
+.skill-right{
+    float: left;
+    width: 70%;
+}
+.skill-frontend{
+    float: left;
+    width: 45%;
+}
+.skill-backend{
+    float: right;
+    width: 45%;
+}
+.footer{
+    text-align: center;
+    background-color: black;
+    margin: 0 auto;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.footer p{
+    color: blueviolet;
+    padding-bottom: 10px;
+}

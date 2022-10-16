@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 h3{
     text-align: center;
     text-decoration: dotted;
@@ -45,4 +49,46 @@ p{
 #group, .group1, .group2{
     background-color: yellowgreen;
     color: brown;
+}
+/* Decendent Selectors */
+#div1 p{
+    color: blue;
+    background-color: bisque;
+}
+/* Clild Selector */
+#div2 > p{
+    color: red;
+}
+#div3{
+    margin: 30px;
+}
+#div3 h1{
+    font-size: 40px;
+   font-family: 'Roboto', sans-serif;
+   font-style: italic;
+   font-weight: bolder;
+   text-align: center;
+}
+#div3 p{
+    color: chartreuse;
+    font-size: 24px;
+
+}
+#align{
+    color: turquoise;
+}
+#align h1{
+    text-align: Center;
+}
+#align .left{
+    text-align: left;
+}
+#align .right{
+    text-align: right;
+}
+#align .center{
+    text-align: center;
+}
+#align .justify{
+    text-align: justify;
 }
